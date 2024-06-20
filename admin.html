@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin PMII Komisariat IBNU SINA STKIP NU Tegal</title>
+    <link rel="stylesheet" href="admin-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>PMII Komisariat IBNU SINA STKIP NU Tegal</h1>
+             <div class="logo-container">
+                <img src="img/pmii.png" alt="Logo PMII">
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#input-berita">Input Berita</a></li>
+                <li><a href="#input-kegiatan">Input Kegiatan</a></li>
+                <li><a href="#logout" onclick="logout()">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="input-berita">
+            <h2>Input Berita</h2>
+            <form>
+                <label for="judul-berita">Judul Berita</label>
+                <input type="text" id="judul-berita" name="judul-berita" required>
+
+                <label for="isi-berita">Isi Berita</label>
+                <textarea id="isi-berita" name="isi-berita" required></textarea>
+
+                <label for="gambar-berita">Gambar Berita</label>
+                <input type="file" id="gambar-berita" name="gambar-berita" accept="image/*">
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section id="input-kegiatan">
+            <h2>Input Kegiatan</h2>
+            <form>
+                <label for="judul-kegiatan">Judul Kegiatan</label>
+                <input type="text" id="judul-kegiatan" name="judul-kegiatan" required>
+
+                <label for="isi-kegiatan">Isi Kegiatan</label>
+                <textarea id="isi-kegiatan" name="isi-kegiatan" required></textarea>
+
+                <label for="gambar-kegiatan">Gambar Kegiatan</label>
+                <input type="file" id="gambar-kegiatan" name="gambar-kegiatan" accept="image/*">
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 PMII PK Ibnu Sina STKIPNU Tegal</p>
+            <ul class="social-icons">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        function logout() {
+            // Implementasi logout di sini
+            alert('Logout berhasil!');
+            // Redirect to login page or homepage
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>
